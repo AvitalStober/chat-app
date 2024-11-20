@@ -29,9 +29,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useState } from "react";
-import { BsChatDotsFill } from "react-icons/bs"; // אייקון לצ'אט
-import { AiOutlineClose } from "react-icons/ai"; // אייקון לסגירה
-import TailwindTry from "@/components/tailwindTry";
 import Image from "next/image";
 
 const Chat = dynamic(() => import("../components/Chat"), {
