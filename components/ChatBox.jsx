@@ -65,13 +65,14 @@ export default function ChatBox() {
           value={messageText}
           placeholder="Type a message..."
           onChange={(e) => setMessageText(e.target.value)}
-          onKeyPress={handleKeyPress}
           className={styles.textarea}
         ></textarea>
         <button
           type="submit"
           className={styles.button}
           disabled={messageTextIsEmpty}
+          onClick={handleKeyPress}
+
         >
           Send
         </button>
